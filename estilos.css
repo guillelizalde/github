@@ -1,0 +1,50 @@
+.padre-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 300px;
+    align-items: flex-start;
+}
+
+
+
+#grilla {
+    display: grid;
+
+    grid-template-areas: 
+        "nav header header"
+        "nav productos publicidad"
+        "nav servicios publicidad"
+        "nav footer footer"
+}
+
+
+
+header {
+    grid-area: header;
+
+}
+
+footer {
+    grid-area: footer;
+
+
+}
+
+section#productos {
+    grid-area: servicios;
+}
+
+section#servicios {
+    grid-area: servicios;
+}
+
+nav {
+    grid-area: nav;
+
+}
+
+aside {
+    grid-area: publicidad;
+}
